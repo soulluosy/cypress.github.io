@@ -28,7 +28,7 @@ describe('Домашка - форма логина и пароля', function ()
 
     it('Верный логин и неверный пароль', function () { //3
          cy.visit('https://login.qa.studio/'); 
-         cy.get('#mail').type('germandolnikov.ru');
+         cy.get('#mail').type('german@dolnikov.ru');
          cy.get('#pass').type('iLoveqastudio12');
          cy.get('#loginButton').click();
          cy.get('#messageHeader').contains('Такого логина или пароля нет');
@@ -82,3 +82,4 @@ describe('Домашка - форма логина и пароля', function ()
 
 
  
+
