@@ -31,7 +31,7 @@ describe('Домашка - форма логина и пароля', function ()
          cy.get('#mail').type('germandolnikov.ru');
          cy.get('#pass').type('iLoveqastudio12');
          cy.get('#loginButton').click();
-         cy.get('#messageHeader').contains('Нужно исправить проблему валидации');
+         cy.get('#messageHeader').contains('Такого логина или пароля нет');
          cy.get('#messageHeader'). should('be.visible');
          cy.get('#exitMessageButton > .exitIcon').should('be.visible');
     })
@@ -74,6 +74,7 @@ describe('Домашка - форма логина и пароля', function ()
     }) 
 
 })    
+
 
 
 
